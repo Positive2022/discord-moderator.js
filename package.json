@@ -1,0 +1,22 @@
+{
+  "name": "discord-moderator.js",
+  "version": "1.0.1",
+  "description": "Easily make moderaton command in your bot and take mass actions too",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Positive2022/discord-moderator.js.git"
+  },
+  "keywords": [
+    "discord-moderator"
+  ],
+  "author": "Positive",
+  "bugs": {
+    "url": "https://github.com/Positive2022/discord-moderator.js/issues"
+  },
+  "homepage": "https://github.com/Positive2022/discord-moderator.js#readme",
+  "license": "MIT"
+}
