@@ -24,7 +24,7 @@ client.on('ready', async () => {
 })
 client.on('message', async message => {
     if (message.content.startsWith(`!ban`)) {
-        userIDs = ['538106037803417632'] // Ability to massban. All you need is get multiple IDs by message collector or something.
+        userIDs = ['id1', 'id2'] // Ability to massban. All you need is get multiple IDs by message collector or something.
         reason = 'scam' // Ban reason
         days = 7 // Number of days to purge.
         interval = 2000 //To avoid API Abuse, we will ban 1 ID in every 2 seconds.
@@ -39,7 +39,7 @@ client.on('message', async message => {
 
         };
     } else if (message.content.startsWith(`!unban`)) {
-        userIDs = ['538106037803417632'] // Ability to massunban. All you need is get multiple IDs by message collector or something.
+        userIDs = ['00000'] // Ability to massunban. All you need is get multiple IDs by message collector or something.
         interval = 2000 //To avoid API Abuse, we will unban 1 ID in every 2 seconds.
         try {
             await mod.Unban(message, userIDs, interval)
@@ -50,7 +50,7 @@ client.on('message', async message => {
             //Handle error like this to respond to user input.
         }
     } else if (message.content.startsWith(`!kick`)) {
-        userIDs = ['538106037803417632', 'id2', 'id3'] // Ability to massunkick. All you need is get multiple IDs by message collector or something.
+        userIDs = ['0000000000000000000', 'id2', 'id3'] // Ability to massunkick. All you need is get multiple IDs by message collector or something.
         reason = 'spam' // The reason
         interval = 2000 //To avoid API Abuse, we will kick 1 ID in every 2 seconds.
         try {
